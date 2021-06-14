@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraJS - Eduardo Arranz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/Main.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="calcu">
+         
+            <div class="pantalla">
+                <input id="resultado" class="form-control" type="text" value="" placeholder="0" readonly=""><input id="memoria" type="hidden" value="0" />
+            </div>
+            <div class="botonera">
+                <input type="button" value="7" class="btn btn-light btn-block border" onclick="siete()">
+
+                <input type="button" value="8" class="btn btn-light btn-block border" onclick="ocho()">
+
+                <input type="button" value="9" class="btn btn-light btn-block border" onclick="nueve()">
+
+            <input type="button" class="btn btn-info btn-block" value="/" onClick="operaciones('dividir'); return false;">
+
+            <input type="button" value="4" class="btn btn-light btn-block border" onclick="cuatro()">
+
+            <input type="button" value="5" class="btn btn-light btn-block border" onclick="cinco()">
+
+            <input type="button" value="6" class="btn btn-light btn-block border" onclick="seis()">
+
+            <input type="button" class="btn btn-info btn-block" value="x"
+            onClick="operaciones('multiplicar'); return false;">
+
+            <input type="button" value="1" onclick="uno()" class="btn btn-light btn-block border">
+
+            <input type="button" value="2"  onclick="dos()" class="btn btn-light btn-block border">
+
+            <input type="button" value="3" class="btn btn-light btn-block border" onclick="tres()">
+
+            <input type="button" value="-" onClick="operaciones('restar'); return false;" class="btn btn-info btn-block">
+
+            <input type="button" value="0" class="btn btn-light btn-block border" onclick="cero()">
+            
+            <button onclick="resetear()" class="btn btn-danger btn-block">Clear</button>
+
+            <button onclick="del()" class="btn btn-danger btn-block" ><--</button>
+            <input type="button" value="+" onClick="operaciones('sumar'); return false;"class="btn btn-info btn-block">
+            </div><br>
+            <div class="d-grid gap-6">
+            <button type="button" value="=" onClick="operaciones('igual'); return false;" class="btn btn-success">Resultado</button>
+        </div>
+        
+        
+
+         </div>        
+    </div>
+    <script src="./JS/Main.js"></script>
+</body>
+</html>

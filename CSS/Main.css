@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+.container {
+    background-color: rgb(53, 61, 61);
+    width: 30%;
+    gap:2em;
+}
+
+.form-control {
+    font-size: 62px;
+    text-align: right;
+}
+.pantalla, .d-grid {
+    padding:1em;
+  }
+
+.btn-block, .btn-success {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+
+.botonera {
+    display: grid;
+    grid-column: 1/6;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(20px, 100px);
+    gap:1em;
+}
+
+.btn-success {
+height: 68px;
+}
+
+
+.igual{
+    display: grid;
+    grid-column: 1/6;
+float: inline-end;
+}
