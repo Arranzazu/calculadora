@@ -21,7 +21,9 @@
     font-size: 32px;
     font-weight: bold;
 }
-
+.btn-block:hover {
+    background-color: rgb(116, 116, 121);
+}
 
 
 .botonera {
